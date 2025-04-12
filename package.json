@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-backup",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "On-demand local backup of your Obsidian contents.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
