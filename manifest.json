@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "On-demand local backup of your Obsidian contents.",
-	"author": "shriram",
+	"author": "shrirambalakrishnan",
 	"authorUrl": "",
 	"fundingUrl": "",
 	"isDesktopOnly": true

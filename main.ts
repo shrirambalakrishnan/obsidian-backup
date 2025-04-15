@@ -1,6 +1,6 @@
 import { Plugin, TFile  } from 'obsidian';
 
-export default class MyPlugin extends Plugin {
+export default class ObsidianBackup extends Plugin {
 
 	async onload() {
 		console.log("Obsidian Backup plugin loaded.")
