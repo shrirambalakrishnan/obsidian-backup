@@ -3,7 +3,7 @@
 	"name": "Obsidian Backup",
 	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
-	"description": "On-demand local backup of your Obsidian contents.",
+	"description": "Backup your Obsidian Vault.",
 	"author": "shrirambalakrishnan",
 	"authorUrl": "",
 	"fundingUrl": "",
