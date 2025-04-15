@@ -3,8 +3,6 @@ import { Plugin, TFile  } from 'obsidian';
 export default class SimpleBackup extends Plugin {
 
 	async onload() {
-		console.log("Simple Backup plugin loaded.")
-
 		// This adds a simple command that can be triggered anywhere
 		this.addCommand({
 			id: 'backup-now',
@@ -15,9 +13,7 @@ export default class SimpleBackup extends Plugin {
 		});
 	}
 
-	onunload() {
-		console.log("Simple Backup plugin Unloaded.")
-	}
+	onunload() {}
 }
 
 class BackupGenerator {
@@ -28,20 +24,16 @@ class BackupGenerator {
 
 	async generate() {
 		// Logic to generate a backup of the vault
-		console.log("Generating backup...");
-		const files = this.app.vault.getFiles();
-		
+		const files = this.app.vault.getFiles();		
 		const backupFolderName = "Backup_" + new Date().toISOString().replace(/[:.]/g, '-');
 		const backupDir = this.app.vault.getRoot().path + "/Backups/" + backupFolderName;
 
 		try {
 			for(let i=0; i < files.length; i++) {
 				const file = files[i];
-				console.log("Processing file - ", file.path);
 
 				// Skip files in the Backups folder
 				if (file.path.includes("Backups/")) {
-					console.log("Skipping file in Backups folder: " + file.path);
 					continue;
 				}
 
@@ -51,14 +43,8 @@ class BackupGenerator {
 					const targetDir = targetPath.substring(0, targetPath.lastIndexOf("/"));
 
 					try {
-						// Ensure the directory structure exists
-						console.log("trying to create folder - ", targetDir);
-						
 						await this.app.vault.createFolder(targetDir);
 					} catch (error) {
-						console.log("trying to create folder - ", targetDir, "FAILED");
-						
-						// Ignore errors if the folder already exists
 						console.error("Error creating folder: " + error);
 					}
 
@@ -66,7 +52,6 @@ class BackupGenerator {
 						// Read the file content and write it to the backup location
 						const content = await this.app.vault.read(file);
 						await this.app.vault.adapter.write(targetPath, content);
-						console.log("File backed up: " + targetPath);
 					} catch (error) {
 						console.error("Error processing file: " + file.path + " - " + error);
 					}
