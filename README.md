@@ -1,4 +1,4 @@
-# obsidian-backup
+# simple-backup
 
 A simple Obsidian plugin to back up your vault contents.
 
@@ -10,9 +10,9 @@ A simple Obsidian plugin to back up your vault contents.
 ## Usage
 
 1. After installing the plugin, open the Command Palette (press `Cmd+P` or `Ctrl+P`).
-2. Run the command: “Obsidian Backup: Backup Now”.
+2. Run the command: "Simple Backup: Backup Now".
 3. A new folder named Backups will be created inside your vault.
-4. Inside it, you’ll find a subfolder with a timestamp containing a full snapshot of your vault’s contents.
+4. Inside it, you’ll find a subfolder with a timestamp containing a full snapshot of your vault's contents.
 
 ## Roadmap
 

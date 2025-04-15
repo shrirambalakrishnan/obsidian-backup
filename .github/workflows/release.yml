@@ -1,4 +1,4 @@
-name: Release Obsidian Backup Plugin
+name: Release Simple Backup Plugin
 
 on:
   push:

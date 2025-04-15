@@ -1,9 +1,9 @@
 import { Plugin, TFile  } from 'obsidian';
 
-export default class ObsidianBackup extends Plugin {
+export default class SimpleBackup extends Plugin {
 
 	async onload() {
-		console.log("Obsidian Backup plugin loaded.")
+		console.log("Simple Backup plugin loaded.")
 
 		// This adds a simple command that can be triggered anywhere
 		this.addCommand({
@@ -16,7 +16,7 @@ export default class ObsidianBackup extends Plugin {
 	}
 
 	onunload() {
-		console.log("Obsidian Backup plugin Unloaded.")
+		console.log("Simple Backup plugin Unloaded.")
 	}
 }
 

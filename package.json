@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-backup",
+	"name": "simple-backup",
 	"version": "1.0.3",
-	"description": "On-demand local backup of your Obsidian contents.",
+	"description": "Backup your Obsidian Vault.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

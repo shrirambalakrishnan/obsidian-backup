@@ -1,6 +1,6 @@
 {
-	"id": "obsidian-backup",
-	"name": "Obsidian Backup",
+	"id": "simple-backup",
+	"name": "Simple Backup",
 	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
 	"description": "Backup your Obsidian Vault.",
