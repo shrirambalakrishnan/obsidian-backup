@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
-	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"name": "simple-backup",
+	"version": "1.0.4",
+	"description": "Backup your Obsidian Vault.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
