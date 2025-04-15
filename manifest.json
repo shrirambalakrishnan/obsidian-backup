@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-backup",
 	"name": "Obsidian Backup",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "On-demand local backup of your Obsidian contents.",
 	"author": "shrirambalakrishnan",
